@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Redactor de Normativos</title>
+  <script src="funciones.js" defer></script>
+</head>
+
+<body>
+  <div class="card">
+    <h2>Redactor de Normativos</h2>
+    <div id="toolbar">
+      <button title="Negrita (Ctrl+B)" data-cmd="bold"><b>B</b></button>
+      <button title="Cursiva (Ctrl+I)" data-cmd="italic"><i>I</i></button>
+      <button title="Subrayado (Ctrl+U)" data-cmd="underline"><u>U</u></button>
+      <button id="clear-btn" title="Limpiar formato">🧹</button>
+    </div>
+
+    <div id="editor" contenteditable="true" placeholder="Escribí acá tu comunicación…"></div>
+    <!-- <div id="counter" style="margin-bottom:8px; color:#004a93;">
+    </div> -->
+    <button class="animate__animated animate__bounce" id="download" onclick="downloadTxt()">Generar archivo TXT</button>
+
+    <h3 class='vistaPreviaTitulo'>Vista previa (TXT)</h3>
+    <pre id="preview"></pre>
+  </div>
+
+</body>
+
+</html>
